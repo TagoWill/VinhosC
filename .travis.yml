@@ -10,7 +10,7 @@ branches:
 env:
   global:
     - GH_REPO_NAME: VinhosC
-    - DOXYFILE: $TRAVIS_BUILD_DIR/doxygen_config
+    - DOXYFILE: $TRAVIS_BUILD_DIR/Doxyfile
     - GH_REPO_REF: github.com/TagoWill/VinhosC.git
 
 # Install dependencies
