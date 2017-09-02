@@ -23,9 +23,12 @@ addons:
       - doxygen-gui
       - graphviz
 
+install: true
+
 # Build your code e.g. by calling make
-script:
-  - make
+script: true
+
+#  - make
 
 # Generate and deploy documentation
 after_success:
