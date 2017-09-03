@@ -2,6 +2,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_Vinhos.h"
+#include "Results.h"
 
 class Vinhos : public QMainWindow
 {
@@ -10,6 +11,15 @@ class Vinhos : public QMainWindow
 public:
 	Vinhos(QWidget *parent = Q_NULLPTR);
 
+
+public slots:
+	void openResults();
+
 private:
 	Ui::VinhosClass ui;
+
+	//Results MyNewWindow;
+
+/*private slots:
+	void on_mMyButton_clicked();*/
 };
