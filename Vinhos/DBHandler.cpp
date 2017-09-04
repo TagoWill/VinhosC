@@ -24,6 +24,18 @@ void DBHandler::closeDB()
 
 DBErrorHandler DBHandler::verfica()
 {
-	return DBErrorHandler();
+	QSqlQuery query;
+	query.prepare("SELECT * FROM Clientes");
+	query.exec();
+
+	if (!query.next()) {
+		return DBErrorHandler::Invalid;
+	}
+	while (query.next()) {
+		int NIF = query.value(0).toInt();
+		QString name = query.value(2).toString();
+		qDebug() << "Name: " << name << " NIF: " << NIF;
+	}
+	return DBErrorHandler::Ok;
 }
 

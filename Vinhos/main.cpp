@@ -15,9 +15,17 @@ int main(int argc, char *argv[])
 	Vinhos w;
 	//w.setWindowFlags(Qt::Window | Qt::FramelessWindowHint);
 	w.show();
+
+	//REMOVE THIS!!!!
 	DBHandler teste;
 	if (teste.openDB()) {
-		qDebug() << "Abriu tabela";
+		qDebug() << "Abriu tabela e : " ;
+		if (teste.verfica() == DBErrorHandler::Ok) {
+			qDebug() << "Ok";
+		}
+		else {
+			qDebug() << "Invalid";
+		}
 	}
 	else {
 		qDebug() << "ERROR";
