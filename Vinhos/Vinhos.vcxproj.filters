@@ -85,5 +85,8 @@
     <ClInclude Include="GeneratedFiles\ui_Results.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
+    <ClInclude Include="DBHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
