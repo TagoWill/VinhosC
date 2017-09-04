@@ -23,7 +23,7 @@ private:
 	Results *MyNewWindow;
 
 private slots:
-	void on_actionExit_clicked();
+	void on_actionExit_triggered();
 
 
 };
