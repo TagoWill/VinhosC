@@ -68,6 +68,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DBHandler.cpp" />
     <ClCompile Include="GeneratedFiles\Debug\moc_Results.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
     </ClCompile>
@@ -117,6 +118,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DBHandler.h" />
+    <ClInclude Include="EnumErrorHandelrs.h" />
     <ClInclude Include="GeneratedFiles\ui_Results.h" />
     <ClInclude Include="GeneratedFiles\ui_Vinhos.h" />
     <ClInclude Include="InterfaceHandler.h" />
