@@ -1,7 +1,10 @@
 #pragma once
 
 #include <QtWidgets/QMainWindow>
+#include <QMessageBox>
+#include <QDebug>
 #include "ui_Vinhos.h"
+#include "Results.h"
 
 class Vinhos : public QMainWindow
 {
@@ -10,6 +13,17 @@ class Vinhos : public QMainWindow
 public:
 	Vinhos(QWidget *parent = Q_NULLPTR);
 
+
+public slots:
+	void openResults();
+
 private:
 	Ui::VinhosClass ui;
+
+	Results *MyNewWindow;
+
+private slots:
+	void on_actionExit_clicked();
+
+
 };
