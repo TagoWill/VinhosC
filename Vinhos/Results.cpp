@@ -9,14 +9,7 @@ Results::Results(QWidget *parent)
 	ui.setupUi(this);
 
 
-	connect(ui.pushButton_back, SIGNAL(clicked()), this, SLOT(BackByClosing()));
+	//connect(ui.pushButton_back, SIGNAL(clicked()), this, SLOT(BackByClosing()));
 	
-}
-
-
-void Results::BackByClosing()
-{
-	//lol.show();
-	//this->close();
 }
 

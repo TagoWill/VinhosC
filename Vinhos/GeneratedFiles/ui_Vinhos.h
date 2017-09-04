@@ -58,6 +58,7 @@ public:
         VinhosClass->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(VinhosClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
+        menuBar->setEnabled(true);
         menuBar->setGeometry(QRect(0, 0, 600, 21));
         menuFile = new QMenu(menuBar);
         menuFile->setObjectName(QStringLiteral("menuFile"));
@@ -66,9 +67,12 @@ public:
         VinhosClass->setMenuBar(menuBar);
         mainToolBar = new QToolBar(VinhosClass);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
+        mainToolBar->setEnabled(true);
+        mainToolBar->setLayoutDirection(Qt::LeftToRight);
         VinhosClass->addToolBar(Qt::TopToolBarArea, mainToolBar);
         statusBar = new QStatusBar(VinhosClass);
         statusBar->setObjectName(QStringLiteral("statusBar"));
+        statusBar->setSizeGripEnabled(true);
         VinhosClass->setStatusBar(statusBar);
 
         menuBar->addAction(menuFile->menuAction());
@@ -77,7 +81,6 @@ public:
         menuHelp->addAction(actionAbout);
 
         retranslateUi(VinhosClass);
-        QObject::connect(actionExit, SIGNAL(triggered()), VinhosClass, SLOT(close()));
 
         QMetaObject::connectSlotsByName(VinhosClass);
     } // setupUi

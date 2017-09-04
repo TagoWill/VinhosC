@@ -1,6 +1,8 @@
 #pragma once
 
 #include <QtWidgets/QMainWindow>
+#include <QMessageBox>
+#include <QDebug>
 #include "ui_Vinhos.h"
 #include "Results.h"
 
@@ -18,8 +20,10 @@ public slots:
 private:
 	Ui::VinhosClass ui;
 
-	//Results MyNewWindow;
+	Results *MyNewWindow;
 
-/*private slots:
-	void on_mMyButton_clicked();*/
+private slots:
+	void on_actionExit_clicked();
+
+
 };

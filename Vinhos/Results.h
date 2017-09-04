@@ -7,12 +7,9 @@ class Results : public QMainWindow {
 	Q_OBJECT
 
 	public:
-		Results(QWidget *parent = 0);
+		Results(QWidget *parent = Q_NULLPTR);
 
 	private:
 		Ui::ResultsWindow ui;
 
-
-	public slots:
-		void BackByClosing();
 };
