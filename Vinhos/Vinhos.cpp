@@ -11,9 +11,8 @@ Vinhos::Vinhos(QWidget *parent)
 
 void Vinhos::openResults()
 {
-	MyNewWindow = new Results();
-	//MyNewWindow.ReceiveParent(this);
-	MyNewWindow->show();
+	myConsultWindow = new ConsultWindow();
+	myConsultWindow->show();
 }
 
 

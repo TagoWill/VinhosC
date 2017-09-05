@@ -1,7 +1,8 @@
 #pragma once
 
-#include "Vinhos.h"
 #include <QtWidgets/QApplication>
+#include "Vinhos.h"
+
 /**
 @file main.cpp
 */
