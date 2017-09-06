@@ -10,20 +10,21 @@ DBHandler::DBHandler()
 }
 
 
-bool DBHandler::openDB()
+bool DBHandler::OpenDB()
 {
 	bool ok = db.open();
 	return ok;
 }
 
-void DBHandler::closeDB()
+void DBHandler::CloseDB()
 {
 	db.close();
 	return;
 }
 
-DBErrorHandler DBHandler::verfica()
+DBErrorHandler DBHandler::Verfica()
 {
+
 	QSqlQuery query;
 	query.prepare("SELECT * FROM Clientes");
 	query.exec();
@@ -36,6 +37,22 @@ DBErrorHandler DBHandler::verfica()
 		QString name = query.value(2).toString();
 		qDebug() << "Name: " << name << " NIF: " << NIF;
 	}
+
 	return DBErrorHandler::Ok;
 }
 
+void DBHandler::ListAllClients(QListWidget* WindowList)
+{
+	/** @brief Clean the list to repopulate */
+	WindowList->clear();
+
+	if (OpenDB()) {
+		QMessageBox::critical(this, "Error" ,"Error while opening DB");
+		qDebug() << "Error while opening DB";
+		return;
+	}
+
+	QSqlQuery query;
+	query.prepare("SELECT * FROM Clientes  where NOME_M LIKE '" + sql + "%' ORDER BY NOME_M ASC");
+
+}

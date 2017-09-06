@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	w.show();
 
 	//REMOVE THIS!!!!
-	DBHandler teste;
+	/*DBHandler teste;
 	if (teste.openDB()) {
 		qDebug() << "Abriu tabela e : " ;
 		if (teste.verfica() == DBErrorHandler::Ok) {
@@ -29,6 +29,6 @@ int main(int argc, char *argv[])
 	}
 	else {
 		qDebug() << "ERROR";
-	}
+	}*/
 	return a.exec();
 }
