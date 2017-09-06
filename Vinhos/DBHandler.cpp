@@ -4,7 +4,7 @@ DBHandler::DBHandler()
 {
 	db = QSqlDatabase::addDatabase("QMYSQL");
 	db.setHostName("localhost");
-	db.setDatabaseName("db_vinhos");
+	db.setDatabaseName("db_wines");
 	db.setUserName("pi");
 	db.setPassword("13795atago");
 }
@@ -26,7 +26,7 @@ DBErrorHandler DBHandler::Verfica()
 {
 
 	QSqlQuery query;
-	query.prepare("SELECT * FROM Clientes");
+	query.prepare("SELECT * FROM Clients");
 	query.exec();
 
 	if (!query.next()) {
@@ -44,15 +44,29 @@ DBErrorHandler DBHandler::Verfica()
 void DBHandler::ListAllClients(QListWidget* WindowList)
 {
 	/** @brief Clean the list to repopulate */
-	WindowList->clear();
+	//WindowList->clear();
 
-	if (OpenDB()) {
+	if (!OpenDB()) {
 		QMessageBox::critical(this, "Error" ,"Error while opening DB");
 		qDebug() << "Error while opening DB";
 		return;
 	}
 
 	QSqlQuery query;
-	query.prepare("SELECT * FROM Clientes  where NOME_M LIKE '" + sql + "%' ORDER BY NOME_M ASC");
+	query.prepare("SELECT Name FROM Clients ORDER BY Name ASC");
+	query.exec();
+	if (query.size() <= 0) {
+		//WindowList->addItem("No names");
+		qDebug() << "No names on the DB";
+		return;
+	}
+	QString InsertName;
+	while (query.next())
+	{
+		InsertName = query.value(0).toString();
+
+		qDebug() << InsertName;
+
+	}
 
 }

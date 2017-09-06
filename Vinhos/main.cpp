@@ -30,5 +30,11 @@ int main(int argc, char *argv[])
 	else {
 		qDebug() << "ERROR";
 	}*/
+
+	//TESTE ListAllClients
+	/*
+	DBHandler test;
+	test.ListAllClients(NULL);
+	*/
 	return a.exec();
 }
