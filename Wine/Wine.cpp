@@ -1,6 +1,6 @@
-#include "Vinhos.h"
+#include "Wine.h"
 
-Vinhos::Vinhos(QWidget *parent)
+Wine::Wine(QWidget *parent)
 	: QMainWindow(parent)
 {
 	ui.setupUi(this);
@@ -8,17 +8,16 @@ Vinhos::Vinhos(QWidget *parent)
 	connect(ui.pushButton_Results, SIGNAL(clicked()), this, SLOT(openResults()));
 }
 
-
-void Vinhos::openResults()
+void Wine::openResults()
 {
 	myConsultWindow = new ConsultWindow();
 	myConsultWindow->show();
 }
 
 
-void Vinhos::on_actionExit_triggered() {
-	
-	
+void Wine::on_actionExit_triggered() {
+
+
 	QMessageBox::StandardButton replay = QMessageBox::question(this, "Close Application", 
 		"Do you really want to exit?", QMessageBox::Yes | QMessageBox::No);
 

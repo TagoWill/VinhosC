@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<ui version="4.0">
- <class>VinhosClass</class>
- <widget class="QMainWindow" name="VinhosClass">
+<UI version="4.0" >
+ <class>WineClass</class>
+ <widget class="QMainWindow" name="WineClass" >
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -11,7 +10,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Vinhos</string>
+   <string>Wine</string>
   </property>
   <widget class="QWidget" name="centralWidget">
    <widget class="QPushButton" name="pushButton_start">
@@ -100,7 +99,7 @@
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources>
-  <include location="Vinhos.qrc"/>
+  <include location="Wine.qrc"/>
  </resources>
  <connections/>
-</ui>
+</UI>

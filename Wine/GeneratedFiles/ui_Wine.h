@@ -1,13 +1,13 @@
 /********************************************************************************
-** Form generated from reading UI file 'Vinhos.ui'
+** Form generated from reading UI file 'Wine.ui'
 **
 ** Created by: Qt User Interface Compiler version 5.9.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
 
-#ifndef UI_VINHOS_H
-#define UI_VINHOS_H
+#ifndef UI_WINE_H
+#define UI_WINE_H
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
@@ -24,7 +24,7 @@
 
 QT_BEGIN_NAMESPACE
 
-class Ui_VinhosClass
+class Ui_WineClass
 {
 public:
     QAction *actionExit;
@@ -38,16 +38,16 @@ public:
     QToolBar *mainToolBar;
     QStatusBar *statusBar;
 
-    void setupUi(QMainWindow *VinhosClass)
+    void setupUi(QMainWindow *WineClass)
     {
-        if (VinhosClass->objectName().isEmpty())
-            VinhosClass->setObjectName(QStringLiteral("VinhosClass"));
-        VinhosClass->resize(600, 400);
-        actionExit = new QAction(VinhosClass);
+        if (WineClass->objectName().isEmpty())
+            WineClass->setObjectName(QStringLiteral("WineClass"));
+        WineClass->resize(600, 400);
+        actionExit = new QAction(WineClass);
         actionExit->setObjectName(QStringLiteral("actionExit"));
-        actionAbout = new QAction(VinhosClass);
+        actionAbout = new QAction(WineClass);
         actionAbout->setObjectName(QStringLiteral("actionAbout"));
-        centralWidget = new QWidget(VinhosClass);
+        centralWidget = new QWidget(WineClass);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         pushButton_start = new QPushButton(centralWidget);
         pushButton_start->setObjectName(QStringLiteral("pushButton_start"));
@@ -55,8 +55,8 @@ public:
         pushButton_Results = new QPushButton(centralWidget);
         pushButton_Results->setObjectName(QStringLiteral("pushButton_Results"));
         pushButton_Results->setGeometry(QRect(320, 90, 201, 151));
-        VinhosClass->setCentralWidget(centralWidget);
-        menuBar = new QMenuBar(VinhosClass);
+        WineClass->setCentralWidget(centralWidget);
+        menuBar = new QMenuBar(WineClass);
         menuBar->setObjectName(QStringLiteral("menuBar"));
         menuBar->setEnabled(true);
         menuBar->setGeometry(QRect(0, 0, 600, 21));
@@ -64,44 +64,44 @@ public:
         menuFile->setObjectName(QStringLiteral("menuFile"));
         menuHelp = new QMenu(menuBar);
         menuHelp->setObjectName(QStringLiteral("menuHelp"));
-        VinhosClass->setMenuBar(menuBar);
-        mainToolBar = new QToolBar(VinhosClass);
+        WineClass->setMenuBar(menuBar);
+        mainToolBar = new QToolBar(WineClass);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
         mainToolBar->setEnabled(true);
         mainToolBar->setLayoutDirection(Qt::LeftToRight);
-        VinhosClass->addToolBar(Qt::TopToolBarArea, mainToolBar);
-        statusBar = new QStatusBar(VinhosClass);
+        WineClass->addToolBar(Qt::TopToolBarArea, mainToolBar);
+        statusBar = new QStatusBar(WineClass);
         statusBar->setObjectName(QStringLiteral("statusBar"));
         statusBar->setSizeGripEnabled(true);
-        VinhosClass->setStatusBar(statusBar);
+        WineClass->setStatusBar(statusBar);
 
         menuBar->addAction(menuFile->menuAction());
         menuBar->addAction(menuHelp->menuAction());
         menuFile->addAction(actionExit);
         menuHelp->addAction(actionAbout);
 
-        retranslateUi(VinhosClass);
+        retranslateUi(WineClass);
 
-        QMetaObject::connectSlotsByName(VinhosClass);
+        QMetaObject::connectSlotsByName(WineClass);
     } // setupUi
 
-    void retranslateUi(QMainWindow *VinhosClass)
+    void retranslateUi(QMainWindow *WineClass)
     {
-        VinhosClass->setWindowTitle(QApplication::translate("VinhosClass", "Vinhos", Q_NULLPTR));
-        actionExit->setText(QApplication::translate("VinhosClass", "Exit", Q_NULLPTR));
-        actionAbout->setText(QApplication::translate("VinhosClass", "About", Q_NULLPTR));
-        pushButton_start->setText(QApplication::translate("VinhosClass", "Start test", Q_NULLPTR));
-        pushButton_Results->setText(QApplication::translate("VinhosClass", "Results", Q_NULLPTR));
-        menuFile->setTitle(QApplication::translate("VinhosClass", "File", Q_NULLPTR));
-        menuHelp->setTitle(QApplication::translate("VinhosClass", "Help", Q_NULLPTR));
+        WineClass->setWindowTitle(QApplication::translate("WineClass", "Wine", Q_NULLPTR));
+        actionExit->setText(QApplication::translate("WineClass", "Exit", Q_NULLPTR));
+        actionAbout->setText(QApplication::translate("WineClass", "About", Q_NULLPTR));
+        pushButton_start->setText(QApplication::translate("WineClass", "Start test", Q_NULLPTR));
+        pushButton_Results->setText(QApplication::translate("WineClass", "Results", Q_NULLPTR));
+        menuFile->setTitle(QApplication::translate("WineClass", "File", Q_NULLPTR));
+        menuHelp->setTitle(QApplication::translate("WineClass", "Help", Q_NULLPTR));
     } // retranslateUi
 
 };
 
 namespace Ui {
-    class VinhosClass: public Ui_VinhosClass {};
+    class WineClass: public Ui_WineClass {};
 } // namespace Ui
 
 QT_END_NAMESPACE
 
-#endif // UI_VINHOS_H
+#endif // UI_WINE_H

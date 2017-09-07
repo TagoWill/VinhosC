@@ -33,19 +33,19 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Vinhos.cpp">
+    <ClCompile Include="Wine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_Vinhos.cpp">
+    <ClCompile Include="GeneratedFiles\Debug\moc_Wine.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_Vinhos.cpp">
+    <ClCompile Include="GeneratedFiles\Release\moc_Wine.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\qrc_Vinhos.cpp">
+    <ClCompile Include="GeneratedFiles\qrc_Wine.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="InterfaceHandler.cpp">
+    <ClCompile Include="ConsultWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="GeneratedFiles\Debug\moc_ConsultWindow.cpp">
@@ -54,21 +54,21 @@
     <ClCompile Include="GeneratedFiles\Release\moc_ConsultWindow.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="ConsultWindow.cpp">
+    <ClCompile Include="DBHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DBHandler.cpp">
+    <ClCompile Include="InterfaceHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="Vinhos.h">
+    <CustomBuild Include="Wine.h">
       <Filter>Header Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="Vinhos.ui">
+    <CustomBuild Include="Wine.ui">
       <Filter>Form Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="Vinhos.qrc">
+    <CustomBuild Include="Wine.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
     <CustomBuild Include="ConsultWindow.h">
@@ -79,22 +79,22 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GeneratedFiles\ui_Vinhos.h">
+    <ClInclude Include="GeneratedFiles\ui_Wine.h">
       <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="InterfaceHandler.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="GeneratedFiles\ui_ConsultWindow.h">
       <Filter>Generated Files</Filter>
-    </ClInclude>
-    <ClInclude Include="EnumWindowState.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DBHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="EnumErrorHandelrs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumWindowState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InterfaceHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

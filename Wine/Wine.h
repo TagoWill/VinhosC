@@ -3,22 +3,22 @@
 #include <QtWidgets/QMainWindow>
 #include <QMessageBox>
 #include <QDebug>
-#include "ui_Vinhos.h"
 #include "ConsultWindow.h"
+#include "ui_Wine.h"
 
-class Vinhos : public QMainWindow
+class Wine : public QMainWindow
 {
 	Q_OBJECT
 
 public:
-	Vinhos(QWidget *parent = Q_NULLPTR);
+	Wine(QWidget *parent = Q_NULLPTR);
 
 
 public slots:
 	void openResults();
 
 private:
-	Ui::VinhosClass ui;
+	Ui::WineClass ui;
 
 	ConsultWindow *myConsultWindow;
 
