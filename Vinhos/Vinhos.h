@@ -4,7 +4,7 @@
 #include <QMessageBox>
 #include <QDebug>
 #include "ui_Vinhos.h"
-#include "Results.h"
+#include "ConsultWindow.h"
 
 class Vinhos : public QMainWindow
 {
@@ -20,10 +20,10 @@ public slots:
 private:
 	Ui::VinhosClass ui;
 
-	Results *MyNewWindow;
+	ConsultWindow *myConsultWindow;
 
 private slots:
-	void on_actionExit_clicked();
+	void on_actionExit_triggered();
 
 
 };

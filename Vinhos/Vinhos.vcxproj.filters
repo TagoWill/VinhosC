@@ -48,13 +48,13 @@
     <ClCompile Include="InterfaceHandler.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Debug\moc_Results.cpp">
+    <ClCompile Include="GeneratedFiles\Debug\moc_ConsultWindow.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="GeneratedFiles\Release\moc_Results.cpp">
+    <ClCompile Include="GeneratedFiles\Release\moc_ConsultWindow.cpp">
       <Filter>Generated Files</Filter>
     </ClCompile>
-    <ClCompile Include="Results.cpp">
+    <ClCompile Include="ConsultWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="DBHandler.cpp">
@@ -71,11 +71,11 @@
     <CustomBuild Include="Vinhos.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
-    <CustomBuild Include="Results.ui">
-      <Filter>Form Files</Filter>
-    </CustomBuild>
-    <CustomBuild Include="Results.h">
+    <CustomBuild Include="ConsultWindow.h">
       <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ConsultWindow.ui">
+      <Filter>Form Files</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
@@ -85,8 +85,11 @@
     <ClInclude Include="InterfaceHandler.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="GeneratedFiles\ui_Results.h">
+    <ClInclude Include="GeneratedFiles\ui_ConsultWindow.h">
       <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumWindowState.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DBHandler.h">
       <Filter>Header Files</Filter>
