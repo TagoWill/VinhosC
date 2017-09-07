@@ -57,6 +57,9 @@
     <ClCompile Include="ConsultWindow.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="DBHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="Vinhos.h">
@@ -86,6 +89,12 @@
       <Filter>Generated Files</Filter>
     </ClInclude>
     <ClInclude Include="EnumWindowState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DBHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumErrorHandelrs.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
