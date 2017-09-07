@@ -2,6 +2,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include <QDebug>
+#include "EnumWindowState.h"
 #include "ui_ConsultWindow.h"
 
 namespace Ui { class ConsultWindow; };
@@ -17,8 +18,9 @@ public:
 private:
 	Ui::ConsultWindow *ui;
 
+	void ActiveWidgetInConsultWindow(StateOfConsultWindow);
 
 private slots:
-	void on_bViewClientInfo_clicked();
+	void on_bViewClientsInfo_clicked();
 
 };

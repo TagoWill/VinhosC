@@ -85,5 +85,8 @@
     <ClInclude Include="GeneratedFiles\ui_ConsultWindow.h">
       <Filter>Generated Files</Filter>
     </ClInclude>
+    <ClInclude Include="EnumWindowState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

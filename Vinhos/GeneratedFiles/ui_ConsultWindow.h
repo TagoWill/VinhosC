@@ -14,7 +14,9 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QListWidget>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QStackedWidget>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -22,11 +24,11 @@ QT_BEGIN_NAMESPACE
 class Ui_ConsultWindow
 {
 public:
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
-    QPushButton *pushButton_3;
-    QPushButton *pushButton_4;
-    QPushButton *bViewClientInfo;
+    QStackedWidget *stackedWidget;
+    QWidget *Principal;
+    QPushButton *bViewClientsInfo;
+    QWidget *ViewClientsInfo;
+    QListWidget *listWidget;
 
     void setupUi(QWidget *ConsultWindow)
     {
@@ -34,21 +36,22 @@ public:
             ConsultWindow->setObjectName(QStringLiteral("ConsultWindow"));
         ConsultWindow->resize(800, 500);
         ConsultWindow->setMaximumSize(QSize(800, 500));
-        pushButton = new QPushButton(ConsultWindow);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(30, 30, 181, 131));
-        pushButton_2 = new QPushButton(ConsultWindow);
-        pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(30, 180, 181, 141));
-        pushButton_3 = new QPushButton(ConsultWindow);
-        pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(230, 30, 181, 131));
-        pushButton_4 = new QPushButton(ConsultWindow);
-        pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
-        pushButton_4->setGeometry(QRect(590, 30, 181, 131));
-        bViewClientInfo = new QPushButton(ConsultWindow);
-        bViewClientInfo->setObjectName(QStringLiteral("bViewClientInfo"));
-        bViewClientInfo->setGeometry(QRect(590, 180, 181, 121));
+        stackedWidget = new QStackedWidget(ConsultWindow);
+        stackedWidget->setObjectName(QStringLiteral("stackedWidget"));
+        stackedWidget->setGeometry(QRect(10, 10, 781, 481));
+        stackedWidget->setAutoFillBackground(false);
+        Principal = new QWidget();
+        Principal->setObjectName(QStringLiteral("Principal"));
+        bViewClientsInfo = new QPushButton(Principal);
+        bViewClientsInfo->setObjectName(QStringLiteral("bViewClientsInfo"));
+        bViewClientsInfo->setGeometry(QRect(510, 150, 121, 101));
+        stackedWidget->addWidget(Principal);
+        ViewClientsInfo = new QWidget();
+        ViewClientsInfo->setObjectName(QStringLiteral("ViewClientsInfo"));
+        listWidget = new QListWidget(ViewClientsInfo);
+        listWidget->setObjectName(QStringLiteral("listWidget"));
+        listWidget->setGeometry(QRect(20, 80, 411, 231));
+        stackedWidget->addWidget(ViewClientsInfo);
 
         retranslateUi(ConsultWindow);
 
@@ -58,11 +61,7 @@ public:
     void retranslateUi(QWidget *ConsultWindow)
     {
         ConsultWindow->setWindowTitle(QApplication::translate("ConsultWindow", "ConsultWindow", Q_NULLPTR));
-        pushButton->setText(QApplication::translate("ConsultWindow", "View by Client Name", Q_NULLPTR));
-        pushButton_2->setText(QApplication::translate("ConsultWindow", "View by report", Q_NULLPTR));
-        pushButton_3->setText(QApplication::translate("ConsultWindow", "View by Client NIF", Q_NULLPTR));
-        pushButton_4->setText(QApplication::translate("ConsultWindow", "Add new Client", Q_NULLPTR));
-        bViewClientInfo->setText(QApplication::translate("ConsultWindow", "View Client Info", Q_NULLPTR));
+        bViewClientsInfo->setText(QApplication::translate("ConsultWindow", "View Client Info", Q_NULLPTR));
     } // retranslateUi
 
 };
