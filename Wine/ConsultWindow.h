@@ -3,6 +3,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QDebug>
 #include "EnumWindowState.h"
+#include "DBHandler.h"
 #include "ui_ConsultWindow.h"
 
 namespace Ui { class ConsultWindow; };

@@ -23,6 +23,10 @@ void ConsultWindow::ActiveWidgetInConsultWindow(StateOfConsultWindow State)
 	if (State == StateOfConsultWindow::ViewClientsInfo) {
 		ui->Principal->setVisible(false);
 		ui->ViewClientsInfo->setVisible(true);
+
+		DBHandler db;
+		db.ListAllClients(ui->listWidget);
+
 	}
 	
 	return;
