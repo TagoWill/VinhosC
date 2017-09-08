@@ -46,9 +46,9 @@ int main(int argc, char *argv[])
 	/*
 	DBHandler test;
 	test.ListAllClients(NULL);*/
-	/*
-	DBHandler test;
-	test.ListClientsByName(NULL, "J");*/
+	
+	/*DBHandler test;
+	test.ListClientsByNIF(NULL, "9999999");*/
 
 	return a.exec();
 }

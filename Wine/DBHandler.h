@@ -13,11 +13,15 @@ class DBHandler : public QMainWindow {
 
 public:
 	DBHandler();
+
 	bool OpenDB();
 	void CloseDB();
+
+
 	DBErrorHandler Verfica();
 	void ListAllClients(QListWidget*);
 	void ListClientsByName(QListWidget*, QString);
+	void ListClientsByNIF(QListWidget*, QString);
 
 
 private:
