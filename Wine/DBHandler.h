@@ -17,6 +17,7 @@ public:
 	void CloseDB();
 	DBErrorHandler Verfica();
 	void ListAllClients(QListWidget*);
+	void ListClientsByName(QListWidget*, QString);
 
 
 private:
