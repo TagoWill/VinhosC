@@ -23,7 +23,7 @@ void DBHandler::CloseDB()
 	return;
 }
 
-DBErrorHandler DBHandler::Verfica()
+DBVerifyError DBHandler::Verify()
 {
 
 	//TODO Falta os outros erros
@@ -32,7 +32,7 @@ DBErrorHandler DBHandler::Verfica()
 	query.exec();
 
 	if (!query.next()) {
-		return DBErrorHandler::Invalid;
+		return DBVerifyError::Invalid;
 	}
 
 	while (query.next()) {
@@ -41,7 +41,7 @@ DBErrorHandler DBHandler::Verfica()
 		qDebug() << "Name: " << name << " NIF: " << NIF;
 	}
 
-	return DBErrorHandler::Ok;
+	return DBVerifyError::Ok;
 }
 
 void DBHandler::ListAllClients(QListWidget* WindowList)
@@ -135,4 +135,11 @@ void DBHandler::ListClientsByNIF(QListWidget *WindowList, QString SearchNIF)
 
 	}
 	CloseDB();
+}
+
+DBInsertError DBHandler::AddClient(QString NIF, QString ID_Address, QString Name, QString Surname, QString Mobile, QString Email)
+{
+	//SELECT * FROM Table ORDER BY ID DESC LIMIT 1
+	//TODO Finish this function
+	return DBInsertError::Ok;
 }

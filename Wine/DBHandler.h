@@ -17,12 +17,21 @@ public:
 	bool OpenDB();
 	void CloseDB();
 
+	/** Verifies if the DB is working
+	* @return The return value is an enum. That could be OK or invalid_"NameOfTableError".
+	*/
+	DBVerifyError Verify();
 
-	DBErrorHandler Verfica();
+	//All Street functions
+
+
+	//All client functions
 	void ListAllClients(QListWidget*);
 	void ListClientsByName(QListWidget*, QString);
 	void ListClientsByNIF(QListWidget*, QString);
+	DBInsertError AddClient(QString, QString, QString, QString, QString, QString);
 
+	//All report functions
 
 private:
 	QSqlDatabase db;
