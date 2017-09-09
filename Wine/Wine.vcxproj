@@ -88,7 +88,6 @@
     <ClCompile Include="GeneratedFiles\Release\moc_Wine.cpp">
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
     </ClCompile>
-    <ClCompile Include="InterfaceHandler.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Wine.cpp" />
   </ItemGroup>
@@ -117,7 +116,6 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="InterfaceHandler.h" />
     <CustomBuild Include="ConsultWindow.h">
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(QTDIR)\bin\moc.exe;%(FullPath)</AdditionalInputs>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing ConsultWindow.h...</Message>
